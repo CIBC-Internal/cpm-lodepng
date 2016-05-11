@@ -39,11 +39,11 @@ CPM_InitModule(${CPM_MODULE_NAME})
 # Include CMake external project module.
 include(ExternalProject)
 
-set(REPO_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/3rdParty")
+set(REPO_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/3rdParty/lodepng")
 CPM_EnsureRepoIsCurrent(
-  TARGET_DIR ${REPO_SOURCE_DIR}/lodepng
-  SVN_REPOSITORY "http://lpi.googlecode.com/svn/trunk"
-  SVN_REVISION "HEAD"
+  TARGET_DIR ${REPO_SOURCE_DIR}
+  GIT_REPOSITORY "https://github.com/lvandeve/lpi.git"
+  GIT_TAG "origin/master"
   USE_CACHING TRUE
   )
 # Export include directory such that we have to prefix lodepng. Note the
