@@ -42,7 +42,7 @@ include(ExternalProject)
 set(REPO_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/3rdParty/lodepng")
 CPM_EnsureRepoIsCurrent(
   TARGET_DIR ${REPO_SOURCE_DIR}
-  GIT_REPOSITORY "https://github.com/lvandeve/lpi.git"
+  GIT_REPOSITORY "https://github.com/CIBC-Internal/cibc-lodepng.git"
   GIT_TAG "origin/master"
   USE_CACHING TRUE
   )
